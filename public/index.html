@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="LoginForm">
+      <div class="name-Input">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Username" maxlength="10" id="lUsername" autofocus required>
+      </div>
+      <div class="password-Input">
+        <i class="fa fa-key" aria-hidden="hidden"></i>
+        <input type="password" id="lpw" maxlength="12" placeholder="Password" required>
+        <button id="logInShowPassword"><i class="fa fa-eye"></i></button></button>
+      </div>
+      <div><p>Don't have an account? Signup <a href="#" id="signup">here</a></p></div>
+    </div>
+    <div class="SignUpForm">
+      <div class="name-Input">
+        <i class="fa fa-user"></i>
+        <input type="text" placeholder="Username" id="sUsername" maxlength="10" required>
+      </div>
+      <div class="password-Input">
+        <i class="fa fa-key"></i>
+        <input type="password" id="spw" placeholder="Password" maxlength="12" required>
+        <button id="signUpShowPassword">
+          <i class="fa fa-eye"></i>
+        </button>
+      </div>
+      <p class="pw-rules"></p>
+      <div class="confirmPassword">
+        <i class="fa fa-key"></i>
+        <input type="password" id="cpw" maxlength="12" placeholder="Confirm password" required>
+      </div>
+      <p class="cw-rules"></p>
+    </div>
+    <button id="submit">Submit</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
